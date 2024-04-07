@@ -1,0 +1,181 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the html and body take up the full height */
+}
+
+body {
+    background-image: URL(/assets/img/BANNER\ SUITZZ\ SAD.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;
+    margin-top: 25%;;
+}
+
+.image {
+    width: 40%; /* Adjust as needed */
+    filter:drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.4));
+    border-radius: 50%;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically in the available space */
+    align-items: center;
+    width: 100%;
+}
+
+.buttonContainer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50;
+    left: 50;
+    transform: translate(-0%, 25%);
+}
+
+.button {
+    background: #cfae5d; /* Peach */
+    border: 3px solid #cfae5d; /* Matching Peach for a cohesive look */
+    border-radius: 50px;
+    width: 200px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    justify-content: center; /* Centers items horizontally in the button */
+    align-items: center; /* Centers items vertically in the button */
+    display: flex;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4); /* Subtle box shadow */
+}
+
+.buttonImage img {
+    margin-top: 4px;
+    margin-left: 6px;
+    width: 24px;
+    height: 24px;
+    
+}
+
+.button a {
+    text-decoration: none; /* Removes the underline from links */
+    color: #1a1309;
+    font-weight: bold;
+    display: flex; /* Ensures the link itself is also a flex container */
+    align-items: center; /* Centers the link text vertically */
+    justify-content: start; /* Centers the link text horizontally */
+    width: 100%; /* Ensures the link occupies the full width of the button */
+    margin-left: 15px;
+}
+
+.button:hover {
+    background: transparent;
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 320px){
+    h1{
+        font-size: 36px;
+    }
+
+    .buttonContainer{
+        width: 70%;
+        
+    }
+
+    .button{
+        width: 70%;
+        height: 45px;
+        margin-top: 20px;
+    }
+
+    .button a {
+        font-size: 20px;
+    }
+
+    .button img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .imageContainer{
+        margin-top: 10%;
+    }
+
+    .image{
+        width: 20%;
+    }
+    h1{
+        font-size: 36px;
+    }
+
+    .buttonContainer{
+        width: 70%;
+        
+    }
+
+    .button{
+        width: 50%;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .button a {
+        font-size: 26px;
+    }
+
+    .button img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .imageContainer{
+        margin-top: 5%;
+    }
+
+    .image{
+        width: 8%;
+    }
+    h1{
+        font-size: 36px;
+    }
+
+    .buttonContainer{
+        width: 70%;
+        
+    }
+
+    .button{
+        width: 220px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .button a {
+        font-size: 20px;
+    }
+
+    .button img {
+        width: 24px;
+        height: 24px;
+    }
+}
